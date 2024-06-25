@@ -9,10 +9,10 @@ const getData = JSON.parse(localStorage.getItem("cgData")) || [];
 
 let editFormData = {};
 
-const systemBtn = document.getElementById("percentage-system-btn");
-systemBtn.addEventListener("click", () => {
-    alert("Sorry Work In Process Not Ready");
-});
+// const systemBtn = document.getElementById("percentage-system-btn");
+// systemBtn.addEventListener("click", () => {
+//     alert("Sorry Work In Process Not Ready");
+// });
 
 addClassBtn.addEventListener("click", () =>{
     chooseText.classList.remove("hidden");
