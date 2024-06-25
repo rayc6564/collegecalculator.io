@@ -72,8 +72,8 @@ const updateNumber = () => {
     // the reason for not putting gpa in this is because
     // we would be calculating each class gpa and not the overall gpa
     formData.forEach(({ creditHour, gpa }) => {
-        creditHourStorage += parseInt(creditHour);
-        qpStorage += parseInt(creditHour) * parseFloat(gpa);
+        creditHourStorage += parseFloat(creditHour);
+        qpStorage += parseFloat(creditHour) * parseFloat(gpa);
     });
 
     gpaStorage = qpStorage / creditHourStorage || 0.00;
@@ -82,7 +82,7 @@ const updateNumber = () => {
     creditHourStorage = creditHourStorage || 0;
     qpStorage = qpStorage || 0;
 
-    creditHourNumber.innerText = creditHourStorage;
+    creditHourNumber.innerText = creditHourStorage.toFixed(2);
     gpaNumber.innerText = gpaStorage.toFixed(2);
     qpNumber.innerText = qpStorage;
 
@@ -102,7 +102,7 @@ const updateFormContainer = () => {
             <div class="form-holder" id="${id}">
                 <p><strong>Name: </strong>${name}</p>
                 <p><strong>Credit Hour: </strong>${creditHour}</p>
-                <p><strong>GPA: </strong>${gpa}</p>
+                <p><strong>GPA: </strong>${parseFloat(gpa).toFixed(2)}</p>
                 <button onclick="editForm(this)" type="button" class="btn">Edit</button>
                 <button onclick="deleteForm(this)" type="button" class="btn">Delete</button>
             </div>

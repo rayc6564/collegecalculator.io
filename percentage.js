@@ -70,6 +70,7 @@ addAssignmentBtn.addEventListener("click", () => {
     percentageInput.placeholder = "Assignment %";
     percentageInput.min = 0;
     percentageInput.className = "percentage-input";
+    percentageInput.step = "0.01";
 
     const percentageSymbol = document.createElement("label");
     percentageSymbol.textContent = "%";
@@ -126,6 +127,7 @@ document.addEventListener("click", (e) => {
         assignmentInput.placeholder = "Enter Grade";
         assignmentInput.min = 0;
         assignmentInput.className = "assignment-grade-input";
+        assignmentInput.step = "0.01";
 
         const subDeleteBtn = document.createElement("button");
         subDeleteBtn.textContent = "Delete";
@@ -266,6 +268,7 @@ if (editFormData) {
         percentageInput.placeholder = "Assignment %";
         percentageInput.min = 0;
         percentageInput.className = "percentage-input";
+        percentageInput.step = "0.01";
         percentageInput.value = assignment.percentage;
 
         const percentageSymbol = document.createElement("label");
@@ -301,6 +304,7 @@ if (editFormData) {
             assignmentInput.placeholder = "Enter Grade";
             assignmentInput.min = 0;
             assignmentInput.className = "assignment-grade-input";
+            assignmentInput.step = "0.01";
             assignmentInput.value = assignmentGrade.grade;
 
             const subDeleteBtn = document.createElement("button");
