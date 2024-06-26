@@ -136,3 +136,23 @@ h1{
 .hidden{
     display: none;
 }
+
+@media (min-width: 576px){
+    #calculator-btn{
+        position: relative;
+        margin-bottom: 10px;
+        text-align: center;
+        top: 15px;
+        left: 195px;
+        font-size: 15px;
+        width: auto;
+    }
+
+    #clear-btn{
+        position: relative;
+        left: 210px;
+        top: 17px;
+        width: auto;
+        font-size: 12px;
+    }
+}
