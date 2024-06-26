@@ -84,7 +84,7 @@ h1{
 }
 
 #cancel-btn{
-    width: 60px;
+    width: 60px; 
 }
 
 .gpa-close-btn{
@@ -180,19 +180,27 @@ and the number next to the text
 
 @media (min-width: 100px) and (max-width: 560px) {
     body{
-        background-color: white;
+        background-color: black;
+    }
+
+    .gpa-calculator{
+        height: 325px;
     }
 
     .btn{
         width: auto;
         text-align: center;
     }
+
     #add-update-btn{
-        margin: 10px auto 10px;
+        margin-top: 12px;
     }
     
     #cancel-btn{
-        margin-bottom: 10px;
+        position: relative;
+        top: 20px;
         width: auto;
+        height: auto;
     }
+
 }

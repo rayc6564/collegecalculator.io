@@ -84,7 +84,7 @@ const updateNumber = () => {
 
     creditHourNumber.innerText = creditHourStorage.toFixed(2);
     gpaNumber.innerText = gpaStorage.toFixed(2);
-    qpNumber.innerText = qpStorage;
+    qpNumber.innerText = qpStorage.toFixed(2);
 
     // Store the updated values in localStorage
     localStorage.setItem('creditHours', JSON.stringify(creditHourStorage));
@@ -101,7 +101,7 @@ const updateFormContainer = () => {
         formContainer.innerHTML += `
             <div class="form-holder" id="${id}">
                 <p><strong>Name: </strong>${name}</p>
-                <p><strong>Credit Hour: </strong>${creditHour}</p>
+                <p><strong>Credit Hour: </strong>${parseFloat(creditHour).toFixed(2)}</p>
                 <p><strong>GPA: </strong>${parseFloat(gpa).toFixed(2)}</p>
                 <button onclick="editForm(this)" type="button" class="btn">Edit</button>
                 <button onclick="deleteForm(this)" type="button" class="btn">Delete</button>
