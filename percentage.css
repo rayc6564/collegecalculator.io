@@ -196,3 +196,34 @@ h1 {
 .hidden{
     display: none;
 }
+
+@media (min-width: 100px) and (max-width: 560px) {
+
+    body{
+        background-color: black;
+    }
+
+    .percentage-calculator{
+        width: 415px;
+        height: 310px;
+    }
+
+    #add-assignment-btn{
+        position: relative;
+        top: 30px;
+        left: 15px;
+    }
+    
+    #cancel-btn{
+        position: relative;
+        top: 30px;
+        left: 46px;
+    }
+    
+    #know-grade-btn{
+        position: relative;
+        top: 30px;
+        left: 78px;
+    }
+
+}

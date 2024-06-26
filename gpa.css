@@ -179,28 +179,13 @@ and the number next to the text
 }
 
 @media (min-width: 100px) and (max-width: 560px) {
-    body{
-        background-color: black;
-    }
-
+    
     .gpa-calculator{
-        height: 325px;
+        height: 320px;
     }
 
     .btn{
         width: auto;
         text-align: center;
     }
-
-    #add-update-btn{
-        margin-top: 12px;
-    }
-    
-    #cancel-btn{
-        position: relative;
-        top: 20px;
-        width: auto;
-        height: auto;
-    }
-
 }

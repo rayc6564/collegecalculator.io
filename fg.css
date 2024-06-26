@@ -138,21 +138,23 @@ h1{
 }
 
 @media (min-width: 576px){
+    body{
+        background-color: black;
+    }
+
     #calculator-btn{
-        position: relative;
-        margin-bottom: 10px;
-        text-align: center;
-        top: 15px;
-        left: 195px;
-        font-size: 15px;
         width: auto;
+        height: auto;
+        font-size: 15px;
+        margin-bottom: 5px;
     }
 
     #clear-btn{
-        position: relative;
-        left: 210px;
-        top: 17px;
         width: auto;
-        font-size: 12px;
+        height: auto;
+        font-size: 14px;
+        margin-bottom: 5px;
+        margin-top: 2px;
     }
+
 }
