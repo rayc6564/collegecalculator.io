@@ -177,3 +177,15 @@ and the number next to the text
 .hidden{
     display: none;
 }
+
+@media (min-width: 576px){
+    .btn{
+        width: auto;
+        text-align: center;
+    }
+    
+    #cancel-btn{
+        width: auto;
+    }
+
+}
