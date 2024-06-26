@@ -113,7 +113,7 @@ h1 {
     }
 
     #delete-btn{
-        text-align: center;
+        vertical-align: middle;
     }
 
 }

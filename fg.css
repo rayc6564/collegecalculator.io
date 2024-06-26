@@ -139,22 +139,25 @@ h1{
 
 @media (min-width: 100px) and (max-width: 560px) {
     body{
-        background-color: black;
+        background-color: white;
     }
 
     #calculator-btn{
         width: auto;
-        height: auto;
+        height: 30px;
         font-size: 15px;
+        position: relative;
+        top: 10px;
         margin-bottom: 5px;
     }
 
     #clear-btn{
         width: auto;
-        height: auto;
+        height: 20px;
         font-size: 14px;
         margin-bottom: 5px;
-        margin-top: 2px;
+        position: relative;
+        top: 12px;
     }
 
 }
