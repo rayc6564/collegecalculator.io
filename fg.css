@@ -137,7 +137,7 @@ h1{
     display: none;
 }
 
-@media (min-width: 576px){
+@media (min-width: 100px) and (max-width: 560px) {
     body{
         background-color: black;
     }

@@ -188,4 +188,8 @@ and the number next to the text
         width: auto;
         text-align: center;
     }
+
+    #add-class-btn{
+        margin-top: 222px;
+    }
 }

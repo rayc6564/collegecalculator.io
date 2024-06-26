@@ -32,7 +32,7 @@ const updatePointFormContainer = () => {
                 <p><strong>${grade}-Min: </strong>${gradeMinNum}</p>
                 <p><strong id="score-text">Grade: </strong>${points.toFixed(2)}</p>
                 <button onclick="editForm(this)" type="button" class="btn">Edit</button>
-                <button onclick="deleteForm(this)" type="button" class="btn">Delete</button>
+                <button onclick="deleteForm(this)" type="button" id="delete-btn" class="btn">Delete</button>
             </div>
         `;
 

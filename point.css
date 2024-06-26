@@ -187,3 +187,32 @@ h1 {
 .hidden{
     display: none;
 }
+
+@media (min-width: 100px) and (max-width: 560px) {
+    body{
+        background-color: black;
+    }
+
+    .points-calculator{
+        width: 360px;
+    }
+
+    #add-points-btn{
+        position: relative;
+        top: 30px;
+        left: 37px;
+    }
+    
+    #cancel-btn{
+        position: relative;
+        top: 30px;
+        left: 55.5px;
+    }
+    
+    #know-points-btn{
+        position: relative;
+        top: 30px;
+        left: 70px;
+    }    
+
+}
