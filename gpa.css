@@ -178,11 +178,11 @@ and the number next to the text
     display: none;
 }
 
-@media (min-width: 390px){
+@media (min-width: 100px) and (max-width: 560px) {
     body{
         background-color: black;
     }
-    
+
     .btn{
         width: auto;
         text-align: center;
