@@ -4,6 +4,8 @@ const cancelBtn = document.getElementById("cancel-btn");
 const knowGradeBtn = document.getElementById("know-grade-btn");
 const knowGradeAdd = document.getElementById("know-grade-add");
 const backBtn = document.getElementById("back-btn");
+const yesBtn = document.getElementById("percentage-yes");
+const noBtn = document.getElementById("percentage-no");
 
 const assignmentText = document.getElementById("assignment-text");
 const percentageCalculator = document.querySelector(".percentage-calculator");
@@ -26,7 +28,7 @@ const gradeFMaxNum = document.getElementById("grade-f-max-number");
 
 const percentageFormData = JSON.parse(localStorage.getItem("cgData")) || [];
 
-let editPointFormData = {};
+let editPercentageFormData = {};
 
 knowGradeBtn.addEventListener("click", () => {
     gradePointInput.classList.add("hidden");
@@ -52,6 +54,48 @@ backBtn.addEventListener("click", () => {
     knowGradeAdd.classList.add("hidden");
     knowText.classList.add("hidden");
     knowGradeInput.classList.add("hidden");
+});
+
+knowGradeAdd.addEventListener("click", () =>{
+    const isEmpty = nameInput.value === "" 
+            || gradeAMaxNum.value === "" || gradeAMinNum.value === ""
+            || gradeBMaxNum.value === "" || gradeBMinNum.value === ""
+            || gradeCMaxNum.value === "" ||gradeCMinNum.value === ""
+            || gradeDMaxNum.value === "" || gradeDMinNum.value === ""
+            || gradeFMaxNum.value === "" || gradeFMinNum.value === "";
+    if(isEmpty){
+        alert("Please Fill Out Previous Page Values");
+    };
+});
+
+noBtn.addEventListener("click", () =>{
+    closingDialog.close();
+});
+
+yesBtn.addEventListener("click", () =>{
+    location.href = "cg.html";
+});
+
+cancelBtn.addEventListener("click", () => {
+    const isEmpty = nameInput.value 
+            || gradeAMaxNum.value || gradeAMinNum.value
+            || gradeBMaxNum.value || gradeBMinNum.value
+            || gradeCMaxNum.value ||gradeCMinNum.value 
+            || gradeDMaxNum.value || gradeDMinNum.value
+            || gradeFMaxNum.value || gradeFMinNum.value;
+
+    const didChange = nameInput.value !== editPercentageFormData.name
+            || gradeAMaxNum.value !== editPercentageFormData.gradeAMaxNum || gradeAMinNum.value !== editPercentageFormData.gradeAMinNum
+            || gradeBMaxNum.value !== editPercentageFormData.gradeBMaxNum || gradeBMinNum.value !== editPercentageFormData.gradeBMinNum
+            || gradeCMaxNum.value !== editPercentageFormData.gradeCMaxNum || gradeCMinNum.value !== editPercentageFormData.gradeCMinNum
+            || gradeDMaxNum.value !== editPercentageFormData.gradeFMaxNum || gradeDMinNum.value !== editPercentageFormData.gradeDMinNum
+            || gradeFMaxNum.value !== editPercentageFormData.gradeFMaxNum || gradeFMinNum.value !== editPercentageFormData.gradeFMinNum;
+
+    if(isEmpty && didChange){
+        closingDialog.showModal();
+    }else{
+        location.href = "cg.html";
+    }
 });
 
 addAssignmentBtn.addEventListener("click", () => {
@@ -199,6 +243,10 @@ const addOrUpdatePercentageForm = () => {
             assignment: assignmentContainer,
         });
     });
+
+    if (!isNaN(parseFloat(knowGradeInput.value))) {
+        totalPoints += parseFloat(knowGradeInput.value);
+    }
     
     const cgFormObj = {
         id: editFormData ? editFormData.id : `${nameInput.value.toLowerCase().split(" ").join("-")}`,

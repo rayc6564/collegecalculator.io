@@ -93,15 +93,15 @@ backBtn.addEventListener("click", () => {
     knowText.classList.add("hidden");
     knowPointInput.classList.add("hidden");
     backBtn.classList.add("hidden");
-})
+});
 
 noBtn.addEventListener("click", () =>{
     closingDialog.close();
-})
+});
 
 yesBtn.addEventListener("click", () =>{
     location.href = "cg.html";
-})
+});
 
 cancelBtn.addEventListener("click", () => {
     const isEmpty = nameInput.value 
@@ -123,7 +123,7 @@ cancelBtn.addEventListener("click", () => {
     }else{
         location.href = "cg.html";
     }
-})
+});
 
 const addOrUpdatePointsForm = () => {
 

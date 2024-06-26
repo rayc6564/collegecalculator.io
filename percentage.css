@@ -90,6 +90,10 @@ h1 {
     text-align: center; 
 }
 
+#know-grade-add{
+    margin-right: 100px;
+}
+
 #add-btn{
     position: relative;
     font-size: 14px;
@@ -130,7 +134,7 @@ h1 {
 
 #back-btn{
     position: relative;
-    left: 158.8px;
+    left: 157.8px;
     top: 120px;
     width: 45px;
 }
