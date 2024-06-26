@@ -180,7 +180,7 @@ and the number next to the text
 
 @media (min-width: 100px) and (max-width: 560px) {
     body{
-        background-color: black;
+        background-color: white;
     }
 
     .btn{
