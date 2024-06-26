@@ -31,7 +31,7 @@ h1{
 .final-grade-calculator{
     background-color: beige;
     /* make the box around the things */
-    width: 500px;
+    width: 420px;
     height: 300px;
     border: 5px solid slategrey;
     border-radius: 5px;
@@ -101,14 +101,14 @@ h1{
     justify-content: center;
     margin-bottom: 10px;
     top: 20px;
-    left: 195px;
+    left: 155px;
     font-size: 18px;
 }
 
 #clear-btn{
     display: flex;
     position: relative;
-    left: 210px;
+    left: 173px;
     top: 20px;
     font-size: 17px;
 }
@@ -145,19 +145,18 @@ h1{
     #calculator-btn{
         width: auto;
         height: 30px;
-        font-size: 15px;
-        position: relative;
-        top: 10px;
-        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #clear-btn{
         width: auto;
         height: 20px;
         font-size: 14px;
-        margin-bottom: 5px;
-        position: relative;
-        top: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

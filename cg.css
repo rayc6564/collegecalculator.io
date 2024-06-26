@@ -100,7 +100,7 @@ h1 {
 
 @media (min-width: 100px) and (max-width: 560px) {
     body{
-        background-color: white;
+        background-color: black;
     }
 
     .current-grade-calculator {
@@ -113,7 +113,9 @@ h1 {
     }
 
     #delete-btn{
-        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

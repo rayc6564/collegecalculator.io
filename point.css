@@ -118,7 +118,7 @@ h1 {
 #add-points-btn{
     position: relative;
     top: 30px;
-    left: 67px;
+    left: 47px;
 }
 
 #cancel-btn{
@@ -130,7 +130,7 @@ h1 {
 #know-points-btn{
     position: relative;
     top: 30px;
-    left: 100px;
+    left: 120px;
 }
 
 #know-text, #know-points-input{
@@ -190,7 +190,7 @@ h1 {
 
 @media (min-width: 100px) and (max-width: 560px) {
     body{
-        background-color: white;
+        background-color: black;
     }
 
     .points-calculator{
@@ -200,19 +200,19 @@ h1 {
     #add-points-btn{
         position: relative;
         top: 30px;
-        right: 2px;
+        left: 33px;
     }
     
     #cancel-btn{
         position: relative;
         top: 30px;
-        left: 16.5px;
+        left: 71.7px;
     }
     
     #know-points-btn{
         position: relative;
         top: 30px;
-        left: 31px;
-    }    
+        left: 110px;
+    }
 
 }
