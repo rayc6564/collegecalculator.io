@@ -138,7 +138,7 @@ const editForm = (button) => {
     gpaInput.value = currentFormData.gpa;
     
     // replace the button text
-    addUpdateBtn.innerText = "Update Form";
+    addUpdateBtn.innerText = "Update";
 
     // show the form
     gpaForm.classList.toggle("hidden");
