@@ -135,7 +135,16 @@ and the number next to the text
 */
 .gpa-container>div {
     display: flex;
-    gap: 2px;
+}
+
+.credit-hour-text, #credit-hour-number{
+    position: relative;
+    right: 8px;
+}
+
+.qp-text, #qp-number{
+    position: relative;
+    left: 8px;
 }
 
 /* All together */
