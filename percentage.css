@@ -198,11 +198,7 @@ h1 {
 }
 
 @media (min-width: 100px) and (max-width: 560px) {
-
-    body{
-        background-color: orange;
-    }
-
+    
     .percentage-calculator{
         width: 375px;
     }

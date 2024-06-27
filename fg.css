@@ -138,13 +138,10 @@ h1{
 }
 
 @media (min-width: 100px) and (max-width: 560px) {
-    body{
-        background-color: white;
-    }
 
     .final-grade-calculator{
         width: 399px;
-        height: 310px;
+        height: 325px;
     }
 
     #calculator-btn{

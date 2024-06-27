@@ -190,6 +190,10 @@ h1 {
 
 @media (min-width: 100px) and (max-width: 560px) {
 
+    body{
+        background-color: white;
+    }
+
     .points-calculator{
         width: 375px;
     }
@@ -197,7 +201,7 @@ h1 {
     #add-points-btn{
         position: relative;
         top: 30px;
-        left: 23px;
+        left: 33px;
     }
     
     #cancel-btn{

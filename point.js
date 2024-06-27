@@ -147,8 +147,8 @@ const addOrUpdatePointsForm = () => {
     });
 
     if (!isNaN(parseFloat(knowPointInput.value))) {
-        totalPoints += parseFloat(knowPointInput.value);
-    }
+        totalPoints = parseFloat(knowPointInput.value);
+    };
 
     const cgFormObj = {
         id: editFormData ? editFormData.id : `${nameInput.value.toLowerCase().split(" ").join("-")}`,

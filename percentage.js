@@ -245,8 +245,8 @@ const addOrUpdatePercentageForm = () => {
     });
 
     if (!isNaN(parseFloat(knowGradeInput.value))) {
-        totalPoints += parseFloat(knowGradeInput.value);
-    }
+        totalPoints = parseFloat(knowGradeInput.value);
+    };
     
     const cgFormObj = {
         id: editFormData ? editFormData.id : `${nameInput.value.toLowerCase().split(" ").join("-")}`,
