@@ -92,6 +92,7 @@ h1 {
 #form-container button{
     margin: 5px auto 12px;
     width: 50px;
+    text-align: center;
 }
 
 .hidden{
