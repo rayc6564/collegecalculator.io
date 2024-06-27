@@ -216,7 +216,7 @@ h1 {
     #cancel-btn{
         position: relative;
         top: 30px;
-        left: 17.5px;
+        right: 15px;
     }
     
     #know-grade-btn{

@@ -144,23 +144,25 @@ h1{
 
     .final-grade-calculator{
         width: 370px;
-        height: 350px;
+        height: 375px;
     }
 
     #calculator-btn{
         top: 10px;
         left: 140px;
         font-size: 15px;
-        width: 30px;
+        width: 60px;
         height: auto;
+        text-align: center;
     }
     
     #clear-btn{
-        left: 158px;
+        left: 135px;
         top: 10px;
         font-size: 12px;
-        width: 20px;
+        width: 40px;
         height: auto;
+        text-align: center;
     }
 
 }
