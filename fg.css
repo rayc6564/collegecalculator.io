@@ -75,7 +75,7 @@ h1{
 #ok-btn{
     position: relative;
     top: 10px;
-    cursor: help;
+    cursor: grab;
 }
 
 #statement-text{
@@ -143,22 +143,17 @@ h1{
     }
 
     .final-grade-calculator{
-        width: 420px;
+        width: 370px;
+        height: 350px;
     }
 
     #calculator-btn{
-        display: flex;
-        position: relative;
-        justify-content: center;
-        margin-bottom: 10px;
         top: 10px;
         left: 140px;
         font-size: 18px;
     }
     
     #clear-btn{
-        display: flex;
-        position: relative;
         left: 158px;
         top: 10px;
         font-size: 17px;

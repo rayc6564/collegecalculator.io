@@ -200,7 +200,7 @@ h1 {
     #add-points-btn{
         position: relative;
         top: 30px;
-        left: 10px;
+        left: 20px;
     }
     
     #cancel-btn{
@@ -212,7 +212,7 @@ h1 {
     #know-points-btn{
         position: relative;
         top: 30px;
-        left: 60px;
+        left: 70px;
     }
 
 }
