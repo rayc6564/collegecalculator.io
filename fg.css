@@ -143,7 +143,7 @@ h1{
     }
 
     .final-grade-calculator{
-        width: 370px;
+        width: 380px;
         height: 375px;
     }
 
@@ -151,16 +151,16 @@ h1{
         top: 10px;
         left: 140px;
         font-size: 15px;
-        width: 60px;
+        width: 80px;
         height: auto;
         text-align: center;
     }
     
     #clear-btn{
-        left: 135px;
-        top: 10px;
+        left: 140px;
+        top: 15px;
         font-size: 12px;
-        width: 40px;
+        width: 55px;
         height: auto;
         text-align: center;
     }

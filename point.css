@@ -189,9 +189,6 @@ h1 {
 }
 
 @media (min-width: 100px) and (max-width: 560px) {
-    body{
-        background-color: black;
-    }
 
     .points-calculator{
         width: 375px;

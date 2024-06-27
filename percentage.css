@@ -200,7 +200,7 @@ h1 {
 @media (min-width: 100px) and (max-width: 560px) {
 
     body{
-        background-color: black;
+        background-color: white;
     }
 
     .percentage-calculator{
@@ -210,13 +210,13 @@ h1 {
     #add-assignment-btn{
         position: relative;
         top: 30px;
-        right: 20px;
+        right: 35px;
     }
     
     #cancel-btn{
         position: relative;
         top: 30px;
-        right: 15px;
+        left: 17.5px;
     }
     
     #know-grade-btn{
