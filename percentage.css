@@ -210,7 +210,7 @@ h1 {
     #add-assignment-btn{
         position: relative;
         top: 30px;
-        right: 75px;
+        left: 2px;
     }
     
     #cancel-btn{
