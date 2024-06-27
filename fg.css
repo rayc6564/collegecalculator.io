@@ -150,13 +150,17 @@ h1{
     #calculator-btn{
         top: 10px;
         left: 140px;
-        font-size: 18px;
+        font-size: 15px;
+        width: 30px;
+        height: auto;
     }
     
     #clear-btn{
         left: 158px;
         top: 10px;
-        font-size: 17px;
+        font-size: 12px;
+        width: 20px;
+        height: auto;
     }
 
 }
