@@ -91,3 +91,9 @@ button{
 .home-btn i{
     font-size: 20px;
 }
+
+#new-text{
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #333;
+}
